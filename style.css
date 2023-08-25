@@ -1,6 +1,7 @@
 .flex-container {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 .h-logo img {
     width: auto;
@@ -21,10 +22,12 @@
     display: flex;
     gap: 12px;
     color: white;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
 }
 a {
     text-decoration: none;
     color: white;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
 }
 .top {
     display: flex;
@@ -35,8 +38,11 @@ a {
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-position: center center; /* Center the image */
     background-size: cover; /* Resize to cover the entire element */
-    height: 500px;
+    height: 450px;
     padding: 50px;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
+    color:rgb(142, 132, 0);
+    font-weight:800;
 }
 
 .top img {
@@ -59,6 +65,7 @@ a {
     width: 160px;
     background-color: aqua;
     color:blueviolet;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
 }
 
 .middle {
@@ -67,5 +74,119 @@ a {
     background-position: center center; /* Center the image */
     background-size: cover; 
     height: 500px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    justify-content: flex-start;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
 }
+
+#middle-title {
+    font-size: 36px;
+    font-family: extra-bold;
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
+}
+.items {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 150px;
+}
+
+.items img {
+    height: 130px;
+    border: 5px solid rgb(58, 58, 233); /* Border style and color */
+    border-radius: 10px;
+}
+
+.item .pictext {
+    color:aqua;
+    font-size: 16px;
+    font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
+    font-weight:300;
+}
+
+.lower-middle {
+    background-image: url('https://media1.giphy.com/media/2y98KScHKeaQM/giphy.gif?cid=ecf05e47i7anwnx9zwrbylzbwjtmnzq9ytz6nged6i24lszg&ep=v1_gifs_related&rid=giphy.gif&ct=g');
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Center the image */
+    background-size: cover; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-middle .quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color:rgb(0,0,0,0.88);
+    width: 500px;
+}
+.lower-middle .speaker {
+    font-weight: 800;
+    font-size: 24px;
+    padding-left: 500px;
+}
+
+.bottom {
+    background-image: url('https://img.freepik.com/free-vector/perspective-japanese-street-neon-lights_52683-44988.jpg?w=900&t=st=1692976105~exp=1692976705~hmac=91a7b5dca6eaa468d4924c45a6c58bc3d245b23ab751df2f4c529343fe613f6b');
+    background-size: cover;
+    background-position: center bottom; /* Adjust the positioning */
+    padding-top: 100px; /* Add padding to ensure content doesn't overlap with the background */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom .infobox {
+    background-color: aqua;
+    color:blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-radius: 10px;
+    padding: 48px;
+    margin-top: -15px;
+  }
+
+  .infobox .call-action {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .infobox #join {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .infobox #signup2 {
+    background-color: aqua;
+    color:blueviolet;
+    border: solid 4px blueviolet;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align:center;
+  }
+  #copyright {
+    padding: 15px;
+    color: white;
+  }
