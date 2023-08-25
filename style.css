@@ -1,0 +1,71 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+.h-logo img {
+    width: auto;
+    height: 40px;
+    align-self: center;
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+.h-logo, .contacts {
+    display: flex;
+    gap: 12px;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-image: url('https://img.freepik.com/free-vector/perspective-japanese-street-neon-lights_52683-44988.jpg?w=900&t=st=1692976105~exp=1692976705~hmac=91a7b5dca6eaa468d4924c45a6c58bc3d245b23ab751df2f4c529343fe613f6b');
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Center the image */
+    background-size: cover; /* Resize to cover the entire element */
+    height: 500px;
+    padding: 50px;
+}
+
+.top img {
+    width: 500px;
+    height: 300px;
+    opacity: 0.75;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+    height: 300px;
+}
+
+.description #signup {
+    padding: 8px;
+    text-align: center;
+    width: 160px;
+    background-color: aqua;
+    color:blueviolet;
+}
+
+.middle {
+    background-image: url('https://img.freepik.com/free-vector/hinged-bridge-megapolis-river_1441-2825.jpg?w=1060&t=st=1692978467~exp=1692979067~hmac=dffacf2b5c5d5f9f87d8a7756284de3031dc98d334a336399ee5e2d050486cab');
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center center; /* Center the image */
+    background-size: cover; 
+    height: 500px;
+    
+}
