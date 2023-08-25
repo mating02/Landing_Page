@@ -1,7 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    background-color: black;
+  }
+
 .flex-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 .h-logo img {
     width: auto;
@@ -190,3 +198,32 @@ a {
     padding: 15px;
     color: white;
   }
+
+  /* Apply transitions to the containers */
+  
+.nav-link {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: blue; /* Change the color as desired */
+}
+
+/* Style the active link differently */
+.nav-link.active {
+    color: red; /* Change the color for the active link */
+}
+
+  
+  /* Initial state for the containers */
+  .middle, .bottom, .lower-middle {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+   .middle:hover, .lower-middle:hover, .bottom:hover {
+    opacity: 1;
+    transform: translateY(12px);
+}

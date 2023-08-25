@@ -5,7 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon City Store</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test2.css">
+    <script>
+        // Add this function to your existing JavaScript
+function toggleActive(section) {
+    const sections = document.querySelectorAll('.middle, ,.lower-middle, .bottom');
+    sections.forEach((el) => {
+        if (el.classList.contains(section)) {
+            el.classList.add('active');
+        } else {
+            el.classList.remove('active');
+        }
+    });
+
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach((link) => {
+        if (link.getAttribute('data-target') === section) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+
+    </script>
 </head>
 <body>
     <div class="flex-container">
@@ -15,9 +38,17 @@
                 <h4 class="logotext">Neon City Store</h4>
             </div>
             <div class="contacts">
+                <div class="header-link">
+                    <a href="#2" class="nav-link" data-target="middle">Products</a>
+                </div>
+                <div class="header-link">
+                    <a href="#3" class="nav-link" data-target="lower-middle">Inspiration</a>
+                </div>
+                <div class="header-link">
+                    <a href="#4" class="nav-link" data-target="bottom">Sign Up!</a>
+                </div>
                 <div class="header-link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"  target="_blank" rel="noopener noreferrer">About</a></div>
                 <div class="header-link"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Customer Support</a></div>
-                <div class="header-link"><a href="#signup2">Sign Up!</a></div>
             </div>
         </header>
         <div class="top">
@@ -28,7 +59,9 @@
             </div>
             <img src="https://img.freepik.com/premium-vector/kitsune-japan-swords_147069-418.jpg?w=740" alt="image of a japanese mask">
         </div>
-        <div class="middle">
+        </div>
+        <div class="middle" id="2">
+        <div class="middle active">
             <h2 id="middle-title">New Era Clothing.</h2>
             <div class="items">
                 <div class="item">
@@ -52,11 +85,15 @@
                 </div>
             </div>
         </div>
-        <div class="lower-middle">
+        </div>
+        <div class="lower-middle" id="3">
+        <div class="lower-middle active">
             <div class="quote">&bdquo;People who continue to put their lives on the line to defend their faith become heroes and continue to exist on in legend.&ldquo;</div>
             <div class="speaker">- Naruto Uzumaki</div>
         </div>
-        <div class="bottom">
+        </div>
+        <div class="bottom" id="4">
+        <div class="bottom active">
             <div class="infobox">
                 <div class="call-action">
                     <div id="join">Join our Newsletter!</div>
@@ -65,6 +102,7 @@
                 <button id="signup2">Sign up</button>
             </div>
             <div id="copyright"> Copyright &copy; The Odin Project 2023</div>
+        </div>
         </div>
     </div>
 </body>
